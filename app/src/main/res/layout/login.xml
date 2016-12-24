@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G.hero"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/register"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:text="注册"
+            android:layout_marginLeft="50dp"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:background="@color/orange"
+            android:layout_marginTop="40dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protect your safe"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:text="We are here!"
+            />
+    </LinearLayout>
+
+    <TableLayout android:layout_width="wrap_content" android:layout_height="150dp" android:layout_gravity="center"
+        android:layout_column="23"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TableRow android:layout_gravity="center"  android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="wrap_content"
+                android:hint="Input your account"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow android:layout_gravity="center" android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_column="2" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            >
+
+            <CheckBox
+                android:id="@+id/remember_pass"
+                android:layout_height="wrap_content"
+                android:layout_column="0" />
+
+            <TextView
+
+                android:id="@+id/login_auto"
+                android:layout_height="wrap_content"
+                android:text="自动登录"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_column="2" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:text="登陆"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:layout_marginLeft="150dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+
+
+</TableLayout>

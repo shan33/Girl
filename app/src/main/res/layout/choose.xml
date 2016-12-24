@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/pattern"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:text="登陆"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <Button
+            android:id="@+id/idea"
+            android:layout_width="210dp"
+            android:layout_height="160dp"
+            android:text="支招"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimaryDark"
+            />
+        <Button
+            android:id="@+id/help"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:text="帮助"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <Button
+            android:id="@+id/set"
+            android:layout_width="210dp"
+            android:layout_height="110dp"
+            android:text="设置"
+            android:textSize="20sp"
+            android:layout_marginLeft="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:text="谢谢使用"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gesture_name">
+        <item>报警</item>
+        <item>语音识别</item>
+        <item>紧急求救</item>
+        <item>模拟声音</item>
+        <item>闪光灯</item>
+    </string-array>
+
+</resources>

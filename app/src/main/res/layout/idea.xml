@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+   <safe.girl.just.girl.SlidingMenu
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbarAlwaysDrawHorizontalTrack="false"
+       >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <include layout="@layout/layout_menu"/>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/idea2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingTop="60dp"
+                android:paddingLeft="130dp"
+                android:text="注意事项"
+                android:textColor="#ffff"
+                android:textSize="30sp"
+                />
+            <Button
+                android:id="@+id/attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_alignParentBottom="true"
+                android:text="进入"
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                android:background="@android:color/transparent"
+                />
+         </RelativeLayout>
+      </LinearLayout>
+   </safe.girl.just.girl.SlidingMenu>
+
+</LinearLayout>

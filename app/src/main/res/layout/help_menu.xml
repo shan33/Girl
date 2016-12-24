@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   >
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="  \n\n G.Hero是一款为女性量身定做的app软件，在首页的设置里面你可以进行手势设置以及设置联系人等，打造属于自己的手势，在手机处于黑屏时通过手势开启app的某些急救功能
+    在模式板块下分为步行模式以及乘车模式，在不同的模式下我们将提供给您不同的体验，在两个模块下我们都提供了报警、声音模拟、分享实时位置等功能
+    在支招模块下我们提供给您一些防身小技巧以及一些外出注意事项
+    虽然本款app提供给您很好的帮助，但是靠谁都不如靠自己，关键时刻还是要看你是否能急中生智"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:src="@drawable/h1"
+                    android:layout_gravity="left"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:text="\n\n登录之前先务必先进行一些必要的设置
+                    \n手势设置: 设置特定手势以启动特定求救措施，
+                    \n晃动初始化设置: 为当遇到危险情况晃动手机启动的紧急措施，系统摇晃测试设置为1000
+                    \n联系人设置 : 为设置求救短信联系人"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="450dp"
+                    android:layout_height="300dp"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/h2"
+                        />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/h3"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n支招板块\n无需登录即可查看，
+                    内容为外出注意事项、危机时刻人物的心理分析以及有关的防身攻略"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/h4"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n登录之后的界面\n步行模式将实时监听你的位置信息，
+                    并在地图上画出你的步行轨迹,
+                    当遇到危险时点击地图上此时你所处位置便可发起周边人互救\n
+                    桌面的悬浮按钮为开启对应的求救措施: 报警音--照相机--模拟声音--闪光灯
+                    "
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/h5"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n当你在乘车时启动该模式\n
+                    输入你的目的地址，点击定位便可给你推荐安全乘车路线，\n
+                    此操作还可以用来当你收到服务器的信息的时候，进行路线的导航
+                    \n此时都同样会实时监听你的位置信息，此处与步行模式一样的操作"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</RelativeLayout>

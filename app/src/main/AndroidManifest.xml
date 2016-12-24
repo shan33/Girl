@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="safe.girl.just.girl">
+
+    <!--发短信-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--获取存储权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--蓝牙读取权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!--网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--手机状态-->
+    <!--notific    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+ation-->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <!--电池-->
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <!--声音-->
+    <uses-permission android:name="android.permission.BIND_VOICE_INTERACTION"/>
+    <!--后台-->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <!--系统： 打电话，照相机，打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!--获取GPS信号权限 高德地图所需permission-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_SCORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.NEXTWORK_STATE"/>
+    <uses-permission android:name="android.permission.FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIHURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!--window-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <!--震动-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!--关闭锁屏-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <!--语音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/login"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:launchMode="singleInstance"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+
+        <!--高德-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e58b17396dd0426718b7e30f5b1913e5"/>
+        <service android:name="com.amap.api.location.APSService"></service>
+        <!-- 百度语音-->
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="8921483"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="67NXUqeqkU6xhkHyaKkeks7U"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="e25bb54e1f1f2db719e46863ef85bcf9"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false"/>
+
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--百度语音结束-->
+
+        <!--百度语音-->
+
+        <!--服务 -->
+        <service android:name=".TipService"/>
+        <service android:name="safe.girl.just.person.VService"/>
+        <service android:name="safe.girl.just.person.InformationService"/>
+
+        <!--活动-->
+        <activity android:name=".HelpMenu" android:screenOrientation="portrait"></activity>
+        <activity android:name=".GestureSet" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ChooseActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".IdeaActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".RegisterActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LogoActivity" android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Setting" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MapCenter"
+            android:launchMode="singleTask" android:screenOrientation="portrait"></activity>
+
+        <!--<service android:name=".HardHelp"/>-->
+        <service android:name=".TipService"/>
+        <!--离线下载地图-->
+        <activity android:name=".CreateGestureActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".GestureBuilderActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".GestureStart" android:screenOrientation="portrait"></activity>
+        <activity android:name=".StrategeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".AttentionActivity" android:screenOrientation="portrait"></activity>
+    </application>
+</manifest>
